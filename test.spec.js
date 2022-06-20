@@ -1,5 +1,6 @@
 import { heightChecker } from './E_1051.高度检查器';
 import { duplicateZeros } from './E_1089. 复写零';
+import { isValid } from './E_20. 有效的括号';
 import { smallestDistancePair } from './H_719. 找出第 K 小的数对距离';
 import { addTwoNumbers } from './M_2. 两数相加';
 import { lengthOfLongestSubstring } from './M_3. 无重复字符的最长子串';
@@ -50,7 +51,7 @@ test('E_1', () => {
   expect(ans).toStrictEqual([0, 1]);
 });
 
-test.only('M_3', () => {
+test('M_3', () => {
   // let ans = lengthOfLongestSubstring('abcabcbb');
   // expect(ans).toBe(3);
   // let ans1 = lengthOfLongestSubstring('bbbbb');
@@ -61,4 +62,9 @@ test.only('M_3', () => {
   // expect(ans3).toBe(0);
   let ans4 = lengthOfLongestSubstring(' ');
   expect(ans4).toBe(1);
+});
+
+test.only('E_20', () => {
+  let ans = isValid('{[]}');
+  expect(ans).toBe(true);
 });
