@@ -1,6 +1,7 @@
 import { heightChecker } from './E_1051.高度检查器';
 import { duplicateZeros } from './E_1089. 复写零';
 import { isValid } from './E_20. 有效的括号';
+import { findSubstring } from './H_30. 串联所有单词的子串';
 import { smallestDistancePair } from './H_719. 找出第 K 小的数对距离';
 import { addTwoNumbers } from './M_2. 两数相加';
 import { lengthOfLongestSubstring } from './M_3. 无重复字符的最长子串';
@@ -64,7 +65,13 @@ test('M_3', () => {
   expect(ans4).toBe(1);
 });
 
-test.only('E_20', () => {
+test('E_20', () => {
   let ans = isValid('{[]}');
   expect(ans).toBe(true);
+});
+
+test.only('H_30', () => {
+  let ans = findSubstring('barfoothefoobarman', ['foo', 'bar']);
+  console.log(ans);
+  expect(ans).toStrictEqual([0, 9]);
 });
