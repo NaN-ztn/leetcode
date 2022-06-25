@@ -9,6 +9,7 @@ import { findDiagonalOrder } from './M_498. 对角线遍历';
 import { findPairs } from './M_532. 数组中的 k-diff 数对';
 import { findAndReplacePattern } from './M_890. 查找和替换模式';
 import { minFlipsMonoIncr } from './M_926';
+import { minCost } from './M_剑指 Offer II 091. 粉刷房子';
 import { twoSum } from './美团/E_两数之和';
 test('M_926', () => {
   let ans = minFlipsMonoIncr('010110');
@@ -70,8 +71,22 @@ test('E_20', () => {
   expect(ans).toBe(true);
 });
 
-test.only('H_30', () => {
+test('H_30', () => {
   let ans = findSubstring('barfoothefoobarman', ['foo', 'bar']);
   console.log(ans);
   expect(ans).toStrictEqual([0, 9]);
+});
+describe.only('M_剑指 Offer II 091. 粉刷房子.js', () => {
+  it('test1', () => {
+    let ans = minCost([
+      [17, 2, 17],
+      [16, 16, 5],
+      [14, 3, 19],
+    ]);
+    expect(ans).toBe(10);
+  });
+  it('test2', () => {
+    let ans = minCost([[7, 6, 2]]);
+    expect(ans).toBe(2);
+  });
 });
