@@ -20,7 +20,6 @@ var Solution = function (n, blacklist) {
       }
       this.b2w.set(black, w);
       w++;
-    }
   }
 };
 

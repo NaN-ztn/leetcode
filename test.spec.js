@@ -6,6 +6,7 @@ import { smallestDistancePair } from './H_719. 找出第 K 小的数对距离';
 import { addTwoNumbers } from './M_2. 两数相加';
 import { lengthOfLongestSubstring } from './M_3. 无重复字符的最长子串';
 import { findDiagonalOrder } from './M_498. 对角线遍历';
+import { findLUSlength } from './M_522. 最长特殊序列 II';
 import { findPairs } from './M_532. 数组中的 k-diff 数对';
 import { findAndReplacePattern } from './M_890. 查找和替换模式';
 import { minFlipsMonoIncr } from './M_926';
@@ -89,4 +90,9 @@ describe.only('M_剑指 Offer II 091. 粉刷房子.js', () => {
     let ans = minCost([[7, 6, 2]]);
     expect(ans).toBe(2);
   });
+});
+
+describe('M_522. 最长特殊序列 II.js', () => {
+  let ans = findLUSlength(['aaa', 'aaa', 'aa']);
+  expect(ans).toBe(-1);
 });
